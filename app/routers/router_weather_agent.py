@@ -6,7 +6,8 @@ router = APIRouter(prefix="/agent")
 @router.post("/weather")
 async def get_weather_conditions_week():
     try:
-        result = get_weather_conditions_week()
+        response = get_weather_conditions_week()
+        
         return 
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
