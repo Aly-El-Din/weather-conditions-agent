@@ -1,2 +1,6 @@
 fastapi[standard]
 uvicorn
+
+langgraph
+google-generativeai
+langchain-google-genai
